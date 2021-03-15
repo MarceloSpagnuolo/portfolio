@@ -1,0 +1,238 @@
+.Home-Container {
+    background: #7DD174;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    visibility: visible;
+}
+
+.Avatar {
+    position: absolute;
+    height: 90vh;
+    bottom: 0;
+    left: 20vw;
+}
+
+.Avatar:hover {
+    cursor: pointer;
+}
+
+.Titulo {
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+}
+
+.About {
+    position: relative;
+    top: 101vh;
+    background-color: black;
+    color:rgb(182, 119, 241);
+    margin: 0;
+    margin-top: -8px;
+}
+.About {
+    display: flex;
+    align-items: center;
+}
+
+.Titanic-Container {
+    width: 40vw;
+    height: 60vh;
+    overflow: hidden;
+}
+
+@keyframes React {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.Titanic {
+    height: 120vh;
+    margin-left: -32vw;
+
+    animation: React infinite 20s linear;
+}
+
+.Sobre {
+    width: 60vw;
+    margin-right: 10vw;
+}
+
+.Sobre p {
+    font-size: 1.2rem;
+}
+
+.Nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 9vh;
+    background-color: rgba(182, 119, 241, 0.705);
+    z-index: 2;
+    backdrop-filter: blur(10px);
+}
+
+.Nav h3 {
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.Nav h3:hover {
+    text-shadow: 0 0 10px blanchedalmond;
+}
+
+.Nav h3:active {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.language:hover {
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Projects {
+    display: flex;
+    position: absolute;
+    top: 160vh;
+    background-color: rgb(182, 119, 241);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.Projects-Readme {
+    width: 39vw;
+    margin-left: 9vw;
+    margin-right: 1vw;
+
+}
+
+.Projects-Readme p {
+    font-size: 1.2rem;
+}
+
+.Projects-Display {
+    width: 42vw;
+    height: 80vh;
+    overflow-y: scroll;
+    margin-right: 8vw;
+    scrollbar-width: 5px;
+    scrollbar-color: yellow #800080;
+}
+
+.Projects-Display button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color:white;
+    width: 8vw;
+    height: 5vh;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.Projects-Display button:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.Projects-Display button img {
+    height: 3vh;
+}
+
+.Images {
+    width: 40vW;
+}
+
+.Botones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Skills {
+    position: absolute;
+    top: 268vh;
+    background-color: #f0f0f0;
+    width: 99vw;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+}
+
+.Skills h3 {
+    margin-left: 55px;
+}
+
+.Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.Skill-Display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    transition: all .5s;
+}
+
+.Skill-Display:hover {
+    transition: all .5s;
+    transform: scale(1.2);
+    box-shadow: 5px 5px 10px black;
+    background-color: rgb(182, 119, 241);
+}
+
+.Skill-Display img {
+    width: 128px;
+}
+
+.Skill-Display span {
+    font-weight: bold;
+}
+
+.Nav-Img {
+    display: flex;
+    align-items: center;
+}
+
+.Nav-Img img{
+    height: 5vh;
+    margin-left: 1vw;
+}
+
+.Nav-Img img:hover {
+    cursor: pointer;
+    transition: all .3s;
+    transform: scale(1.2);
+}
