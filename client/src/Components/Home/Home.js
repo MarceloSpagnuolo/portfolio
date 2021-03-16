@@ -44,6 +44,8 @@ import ws from "../../Archives/ws.png";
 import Rellax from "rellax";
 import "./Home.css";
 
+const url = window.location.origin;
+
 function Home() {
     const [language,setLanguage] = useState("spanish");
     const videoRef = useRef();
@@ -72,7 +74,7 @@ useEffect(() => {
                 <a href="https://www.linkedin.com/in/marcelo-spagnuolo-97459265/" target="_blank"><img src={link} alt=""/></a>
                 <a href="https://github.com/MarceloSpagnuolo" target="_blank"><img src={git} alt="" /></a>
                 <a href="mailto: lu4huf@gmail.com"><img src={email} alt="" /></a>
-                <a href="https://api.whatsapp.com/send?phone=+54-3516185440" target="_blank"><img src={ws} alt="" /></a>
+                <a href="https://api.whatsapp.com/send?phone=+54-3516185440" target="_blank"><img src={`${url}/images/ws.png`} alt="" /></a>
             </div>
         </div>
         <div className="Home-Container" ref={rellaxRef} id="home">
