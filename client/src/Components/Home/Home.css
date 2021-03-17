@@ -1,83 +1,6 @@
-.Home-Container {
-    background: #7DD174;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
-
-#video {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -10;
-    visibility: visible;
-}
-
-.Avatar {
-    position: absolute;
-    height: 90vh;
-    bottom: 0;
-    left: 20vw;
-}
-
-.Avatar:hover {
-    cursor: pointer;
-}
-
-.Titulo {
-    position: absolute;
-    top: 40vh;
-    left: 50vw;
-}
-
-.About {
-    position: relative;
-    top: 101vh;
-    background-color: black;
-    color:rgb(182, 119, 241);
-    margin: 0;
-    margin-top: -8px;
-}
-.About {
-    display: flex;
-    align-items: center;
-}
-
-.Titanic-Container {
-    width: 40vw;
-    height: 60vh;
-    overflow: hidden;
-}
-
-@keyframes React {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-.Titanic {
-    height: 120vh;
-    margin-left: -32vw;
-
-    animation: React infinite 20s linear;
-}
-
-.Sobre {
-    width: 60vw;
-    margin-right: 10vw;
-}
-
-.Sobre p {
-    font-size: 1.2rem;
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .Nav {
@@ -90,6 +13,7 @@
     background-color: rgba(182, 119, 241, 0.705);
     z-index: 2;
     backdrop-filter: blur(10px);
+    box-shadow: 5px 0 10px black;
 }
 
 .Nav h3 {
@@ -114,79 +38,121 @@ a {
     cursor: pointer;
 }
 
-html {
-    scroll-behavior: smooth;
+.Nav-Img {
+    display: flex;
+    align-items: center;
+}
+
+.Nav-Img img{
+    height: 5vh;
+    margin-left: 1vw;
+}
+
+.Nav-Img img:hover {
+    cursor: pointer;
+    transition: all .3s;
+    transform: scale(1.3);
+}
+
+.Home-Container {
+    background: #2bb7f8;
+    background: linear-gradient(to left, rgb(87, 87, 245), #84d6fc);
+    overflow: hidden;
+    top: 0;
+    margin-top: -1vh;
+    padding: 0;
+    width: 100vw;
+    height: 91vh;
+    z-index: -1;
+}
+
+.Avatar {
+    position: absolute;
+    height: 90vh;
+    bottom: 0;
+    left: 20vw;
+}
+
+.Titulo {
+    position: absolute;
+    top: 25vh;
+    left: 50vw;
+}
+
+.About {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color:rgb(182, 119, 241);
+    width: 100vw;
+    margin: 0;
+}
+
+.Titanic-Container {
+    width: 40vw;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.Titanic-Container img {
+    width: 68vw;
+}
+
+@keyframes React {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.Titanic {
+    height: 120vh;
+    margin-left: -32vw;
+    animation: React infinite 20s linear;
+}
+
+.Sobre {
+    width: 60vw;
+    margin-right: 10vw;
+}
+
+.Sobre p {
+    font-size: 1.2rem;
 }
 
 .Projects {
     display: flex;
-    position: absolute;
-    top: 160vh;
+    justify-content: center;
     background-color: rgb(182, 119, 241);
+    width: 100vw;
     padding-top: 10vh;
-    padding-bottom: 10vh;
 }
 
 .Projects-Readme {
-    width: 39vw;
-    margin-left: 9vw;
-    margin-right: 1vw;
-
+    max-width: 1050px;
 }
 
 .Projects-Readme p {
     font-size: 1.2rem;
 }
 
-.Projects-Display {
-    width: 42vw;
-    height: 80vh;
-    overflow-y: scroll;
-    margin-right: 8vw;
-    scrollbar-width: 5px;
-    scrollbar-color: yellow #800080;
-}
-
-.Projects-Display button {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: black;
-    color:white;
-    width: 8vw;
-    height: 5vh;
-    font-size: 1.2rem;
-    border-radius: 5px;
-}
-
-.Projects-Display button:hover {
-    opacity: .7;
-    cursor: pointer;
-}
-
-.Projects-Display button img {
-    height: 3vh;
-}
-
-.Images {
-    width: 40vW;
-}
-
-.Botones {
-    display: flex;
-    justify-content: space-around;
+.Carrusel-Container {
+    width: 100vw;
+    background-color: rgb(182, 119, 241);
+    text-align: center;
+    padding-bottom: 5vh;
 }
 
 .Skills {
-    position: absolute;
-    top: 268vh;
     background-color: #f0f0f0;
-    width: 99vw;
+    width: 100vw;
     padding-bottom: 10vh;
     padding-top: 10vh;
 }
 
-.Skills h3 {
+.Skills h2 {
     margin-left: 55px;
 }
 
@@ -203,14 +169,16 @@ html {
     align-items: center;
     padding: 20px;
     background-color: #f0f0f0;
-    transition: all .5s;
+    transition: background-color 2s, transform .5s;
+    z-index: 0;
 }
 
 .Skill-Display:hover {
-    transition: all .5s;
+    transition: background-color .5s, transform .5s;
     transform: scale(1.2);
     box-shadow: 5px 5px 10px black;
     background-color: rgb(182, 119, 241);
+    z-index: 1;
 }
 
 .Skill-Display img {
@@ -219,20 +187,4 @@ html {
 
 .Skill-Display span {
     font-weight: bold;
-}
-
-.Nav-Img {
-    display: flex;
-    align-items: center;
-}
-
-.Nav-Img img{
-    height: 5vh;
-    margin-left: 1vw;
-}
-
-.Nav-Img img:hover {
-    cursor: pointer;
-    transition: all .3s;
-    transform: scale(1.2);
 }
