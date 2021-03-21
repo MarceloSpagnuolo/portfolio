@@ -40,7 +40,7 @@ const content = [{
         button: "Visitar",
         link: "http://www.lagenesis.com.ar",
         button2: "",
-        link: "",
+        link2: "",
         image: `${url}/images/genesis.jpg`
     },
     {
@@ -114,7 +114,7 @@ const ingles = [{
     button: "Visit",
     link: "http://www.lagenesis.com.ar",
     button2: "",
-    link: "",
+    link2: "",
     image: `${url}/images/genesis.jpg`
 },
 {
